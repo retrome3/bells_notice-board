@@ -137,45 +137,48 @@ function App() {
       
       <Header />
       
-      <div className="main-layout">
-        {/* Left sidebar for adding notices */}
-        <div className="sidebar">
-          <NoticeForm onAddNotice={addNotice} />
-          <div className="stats">
-            <h3>Notice Board Stats</h3>
-            <p>Total Notices: <strong>{notices.length}</strong></p>
-            <p>Filtered: <strong>{filteredNotices.length}</strong></p>
-            <p>Theme: <strong>{theme === 'light' ? 'Light ☀️' : 'Dark 🌙'}</strong></p>
-          </div>
+  <div className="main-layout">
+  {/* Left Column: Add Notice Form */}
+  <div className="sidebar">
+    <NoticeForm onAddNotice={addNotice} />
+  </div>
+  
+  {/* Middle Column: Main Content & Controls */}
+  <div className="main-content">
+    <Controls 
+      searchTerm={searchTerm}
+      setSearchTerm={setSearchTerm}
+      selectedCategory={selectedCategory}
+      setSelectedCategory={setSelectedCategory}
+    />
+    
+    <div className="notice-grid">
+      {filteredNotices.length === 0 ? (
+        <div className="no-notices">
+          <p>No notices found matching your criteria.</p>
         </div>
-        
-        {/* Main content area */}
-        <div className="main-content">
-          <Controls 
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
+      ) : (
+        filteredNotices.map(notice => (
+          <NoticeCard 
+            key={notice.id} 
+            notice={notice} 
+            onDelete={deleteNotice}
           />
-          
-          <div className="notice-grid">
-            {filteredNotices.length === 0 ? (
-              <div className="no-notices">
-                <p>No notices found. Try a different search or category, or add a new notice!</p>
-              </div>
-            ) : (
-              filteredNotices.map(notice => (
-                <NoticeCard 
-                  key={notice.id} 
-                  notice={notice} 
-                  onDelete={deleteNotice}
-                />
-              ))
-            )}
-          </div>
-        </div>
-      </div>
-      
+        ))
+      )}
+    </div>
+  </div>
+  
+  {/* Right Column: Stats Panel */}
+  <div className="sidebar">
+    <div className="stats">
+      <h3>Notice Board Stats</h3>
+      <p>Total Notices: <strong>{notices.length}</strong></p>
+      <p>Filtered: <strong>{filteredNotices.length}</strong></p>
+      <p>Theme: <strong>{theme === 'light' ? 'Light ☀️' : 'Dark 🌙'}</strong></p>
+    </div>
+  </div>
+</div>
       <Footer />
     </div>
   );
