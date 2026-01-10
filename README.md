@@ -1,6 +1,10 @@
 # 🏫 Bells University Digital Notice Board
 
-A modern React-based digital notice board for campus announcements with dark/light theme support.
+A modern **React-based** digital notice board for campus announcements built with a **Figma-first design approach** and **design-to-code workflow**.
+
+> **Live Demo:** [https://bellsnotice-board.vercel.app](https://bellsnotice-board.vercel.app)
+> **Figma Design:** [https://tart-device-61470686.figma.site](https://tart-device-61470686.figma.site)
+
 
 ## ✨ Features
 
