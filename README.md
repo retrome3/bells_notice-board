@@ -2,8 +2,8 @@
 
 A modern **React-based** digital notice board for campus announcements built with a **Figma-first design approach** and **design-to-code workflow**.
 
-> **Live Demo:** [https://bellsnotice-board.vercel.app](https://bellsnotice-board.vercel.app)
-> **Figma Design:** [https://tart-device-61470686.figma.site](https://tart-device-61470686.figma.site)
+**Live Demo:** [https://bellsnotice-board.vercel.app](https://bellsnotice-board.vercel.app)
+**Figma Design:** [https://tart-device-61470686.figma.site](https://tart-device-61470686.figma.site)
 
 
 ## ✨ Features
