@@ -2,26 +2,32 @@ import React from 'react';
 import '../styles/App.css';
 
 const Controls = ({ searchTerm, setSearchTerm, selectedCategory, setSelectedCategory }) => {
-  const categories = ['all', 'academics', 'events', 'facilities', 'projects'];
+  const categories = [
+    { id: 'all', label: 'All Notices' },
+    { id: 'academics', label: 'Academics' },
+    { id: 'events', label: 'Events' },
+    { id: 'facilities', label: 'Facilities' },
+    { id: 'projects', label: 'Projects' }
+  ];
 
   return (
     <div className="controls">
       <input 
-        type="text" 
-        className="search-box" 
-        placeholder="Search notices..."
+        type="text"
+        className="search-input"
+        placeholder="🔍 Search notices..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       
-      <div className="category-buttons">
-        {categories.map(category => (
+      <div className="category-tabs">
+        {categories.map(cat => (
           <button
-            key={category}
-            className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(category)}
+            key={cat.id}
+            className={`category-tab ${selectedCategory === cat.id ? 'active' : ''}`}
+            onClick={() => setSelectedCategory(cat.id)}
           >
-            {category === 'all' ? 'All Notices' : category.charAt(0).toUpperCase() + category.slice(1)}
+            {cat.label}
           </button>
         ))}
       </div>
