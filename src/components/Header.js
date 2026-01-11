@@ -4,10 +4,8 @@ import '../styles/App.css';
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-wrapper">
-        <h1>Bells University Digital Notice Board</h1>
-        <p>Stay updated with the latest campus announcements</p>
-      </div>
+      <h1>Bells University Digital Notice Board</h1>
+      <p>Stay updated with the latest campus announcements</p>
     </header>
   );
 };
