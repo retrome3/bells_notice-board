@@ -24,7 +24,7 @@ A modern **React-based** digital notice board for campus announcements built wit
 git clone https://github.com/retrome3/bells_notice-board.git
 
 # Navigate to project
-cd Bells-notice-board
+cd bells_notice-board
 
 # Install dependencies
 npm install
