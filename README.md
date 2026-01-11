@@ -61,8 +61,8 @@ src/
 ## 👥 Team Members
 
 - **Bello Mubarak** - React Component Developer & Lead developer
-- **Agboola Abdullah** - UI/UX Design
+- **Agboola Abdullah** -  Github publisher
 - **Ogunibi Olamide** - Testing & **Documentation Lead**
 - **Tijani Aleem** - Website deployer
-- **Ugwaka Chukwunonso** - Github publisher  
+- **Ugwaka Chukwunonso** -  Report writer
 - **Elias oluwatimileyin** - Figma designer and prototyping
