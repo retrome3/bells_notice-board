@@ -46,15 +46,15 @@ function App() {
         title: 'Mid-Term Exams Schedule',
         content: 'Mid-term examinations for all 200-level courses will commence from November 15, 2026. Check your department notice board for detailed timetable.',
         category: 'academics',
-        date: '2025-11-01',
+        date: '2026-11-01',
         priority: 'high'
       },
       {
         id: 2,
         title: 'ICT 235 Project Submission Deadline',
-        content: 'The deadline for submitting the Frontend Development project is November 30, 2025. Ensure your GitHub repository is properly set up.',
+        content: 'The deadline for submitting the Frontend Development project is November 30, 2026. Ensure your GitHub repository is properly set up.',
         category: 'projects',
-        date: '2025-11-05',
+        date: '2026-11-05',
         priority: 'high'
       },
       {
@@ -62,7 +62,7 @@ function App() {
         title: 'University Sports Week',
         content: 'Annual sports competition begins next week. Register at the sports office before Friday.',
         category: 'events',
-        date: '2025-11-03',
+        date: '2026-11-03',
         priority: 'medium'
       },
       {
@@ -70,23 +70,23 @@ function App() {
         title: 'Library Renovation',
         content: 'The main library will be closed for renovation from November 10-17, 2026. E-library services will remain accessible online.',
         category: 'facilities',
-        date: '2025-11-02',
+        date: '2026-11-02',
         priority: 'medium'
       },
       {
         id: 5,
         title: 'Student Union Meeting',
-        content: 'Monthly student union meeting scheduled for November 8, 2025 at 3 PM in the main auditorium.',
+        content: 'Monthly student union meeting scheduled for November 8, 2026 at 3 PM in the main auditorium.',
         category: 'events',
-        date: '2025-11-01',
+        date: '2026-11-01',
         priority: 'low'
       },
       {
         id: 6,
         title: 'Course Registration Extension',
-        content: 'The course registration deadline has been extended to November 12, 2025. Complete your registration before this date.',
+        content: 'The course registration deadline has been extended to November 12, 2026. Complete your registration before this date.',
         category: 'academics',
-        date: '2025-11-06',
+        date: '2026-11-06',
         priority: 'high'
       }
     ];
