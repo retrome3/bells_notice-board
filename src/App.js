@@ -44,7 +44,7 @@ function App() {
       {
         id: 1,
         title: 'Mid-Term Exams Schedule',
-        content: 'Mid-term examinations for all 200-level courses will commence from November 15, 2025. Check your department notice board for detailed timetable.',
+        content: 'Mid-term examinations for all 200-level courses will commence from November 15, 2026. Check your department notice board for detailed timetable.',
         category: 'academics',
         date: '2025-11-01',
         priority: 'high'
@@ -68,7 +68,7 @@ function App() {
       {
         id: 4,
         title: 'Library Renovation',
-        content: 'The main library will be closed for renovation from November 10-17, 2025. E-library services will remain accessible online.',
+        content: 'The main library will be closed for renovation from November 10-17, 2026. E-library services will remain accessible online.',
         category: 'facilities',
         date: '2025-11-02',
         priority: 'medium'
